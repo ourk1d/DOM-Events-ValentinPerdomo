@@ -1,0 +1,241 @@
+* {box-sizing: border-box;
+ margin: 0;
+padding: 0;}
+
+/*
+fuentes
+font-family: 'Ubuntu Condensed', sans-serif;
+font-family: 'Baloo 2', cursive;
+*/
+
+
+
+main {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    text-decoration: none;
+    color: #0e0b02;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff1cc ;
+}
+
+
+/*Navbar*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1deaa;
+    color: brown;
+}
+
+.logo {margin: 10px;}
+
+.paginas ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.paginas li {
+    list-style: none;
+}
+
+.paginas li a {
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+    color: #5E5A4C;
+    padding: 16px;
+    display: block;
+    font-size: 18px;
+}
+
+.paginas li a:hover {
+    color: #d6715fda;
+}
+
+.list {
+    display: flex;
+    flex: row;
+    margin: 20px;
+    width: 100%;
+}
+
+.button {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+}
+.button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #d6715fda;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Tarjetas*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 10px;
+    width: 250px;
+    height: 400px;
+    padding: 30px;
+    margin: 10px;
+    background-color:#f1deaa ;
+}
+
+.card img {
+    width: 200px;  
+}
+
+.card-title {
+    padding: 5px;
+    margin: 5px;
+}
+
+.card-text {
+    padding: 5px;
+    margin: 5px;
+}
+
+.card-price {
+    padding: 5px;
+    margin: 5px;
+}
+
+.btn{
+    background-color: #d6715fda;
+    border-radius: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* Modal */
+.modal-container {
+    display: none;
+    position: fixed; 
+    background-color: transparent;
+    width: 100%;
+
+  } 
+
+/* hacer visible el modal  */
+.modal-container.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 10;
+  }
+  
+.modal-chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 10px ;
+  }
+
+.shopping-chart {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+  
+ .chartProduct {
+    width: 480px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 5px 0;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .boton-eliminar {
+    background-color: #d6715fda;
+    border-radius: 15px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  .total {
+    font-size: 20px;
+  }
+
+  #totalPrice {
+    color: green;
+  }
+
+.item-price {
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .button {
+        display: flex;
+    }
+
+    .paginas {
+       display: none;
+       width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .paginas ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .paginas li {
+        text-align: center;
+    }
+
+    .paginas li a {
+        padding: 8px;
+    }
+
+    .paginas li:hover {
+        background-color: #c4ba967a
+    }
+
+    .paginas.active {
+        display: flex;
+    }
+
+    
+}
+
+
+
