@@ -2,4 +2,15 @@ const products = [
     {id: 0, img: "./assets/img/1.jpg", name: "Camiseta blanca" ,condition: "buena", price: 150, alt: "camisa" },
     {id: 1, img: "./assets/img/3.jpg", name: "Campera" ,condition: "buena", price: 1500, alt: "campera" },
     {id: 2, img: "./assets/img/5.jpg", name: "Jean" ,condition: "Nuevo", price: 750, alt: "jean" },
-]
+    {id: 3, img: "./assets/img/7.jpg", name: "Jean azul oscuro" ,condition: "Aceptable", price: 300, alt: "jean" },
+    {id: 4, img: "./assets/img/8.jpg", name: "Campera North Face" ,condition: "Muy Buena", price: 1250, alt: "campera" },
+    {id: 5, img: "./assets/img/9.jpg", name: "Short Jean negro" ,condition: "Buena", price: 350, alt: "short"},
+    {id: 6, img: "./assets/img/10.jpg", name: "Campera Vintage 80´s" ,condition: "Muy Buena", price: 1350, alt: "campera" },
+    {id: 7, img: "./assets/img/11.jpg", name: "Championes Adidas" ,condition: "Aceptable", price: 400, alt: "championes" },
+    {id: 8, img: "./assets/img/12.jpg", name: "Mom Jean" ,condition: "Muy Buena", price: 350, alt: "jean" },
+    {id: 9, img: "./assets/img/13.jpg", name: "Top de punto" ,condition: "Nuevo", price: 350, alt: "top" },
+    {id: 10, img: "./assets/img/14.jpg", name: "Jean con bordado" ,condition: "Buena", price: 400, alt: "jean" },
+    {id: 11, img: "./assets/img/15.jpg", name: "Top Yellow Springs" ,condition: "Buena", price: 150, alt: "top" },
+    {id: 12, img: "./assets/img/16.jpg", name: "Remera HyM " ,condition: "Aceptable", price: 100, alt: "remera" },
+    {id: 13, img: "./assets/img/17.jpg", name: "Pollera de Jean" ,condition: "Nuevo", price: 400, alt: "jean" },
+    ]

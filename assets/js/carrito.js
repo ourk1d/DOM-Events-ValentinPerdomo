@@ -1,5 +1,13 @@
-const shoppingChart = []
-    
+let shoppingChart = []
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem('shoppingChart')){
+        shoppingChart = JSON.parse(localStorage.getItem('shoppingChart'))
+        showChart()
+    }
+})  
 
 
 /*funcion para agregar carritos al item*/
@@ -17,16 +25,11 @@ const addProduct = (productId) => {
         
     }
     renderChartProducts()
-}
-
-
-
-}
+}}
 
 /* renderizar carrito */
 
 const showChart = () => {
-
     const chart = document.getElementById ("shopping-chart")
     //limpio el carrito
     chart.innerHTML = ""
@@ -43,11 +46,16 @@ const showChart = () => {
         const boton = document.getElementById ( `deleteOnChart(${product.id})`)
         boton.addEventListener ('click', () => {
             deleteOnChart(product.id)
-        })      
-        });
-         //precio total
-     const totalPrice = document.getElementById('totalPrice')
-     totalPrice.innerText = shoppingChart.reduce((acumulador, item) => acumulador + item.price, 0)
+            localStorage.setItem('shoppingChart', JSON.stringify(shoppingChart))
+        })  
+        
+        localStorage.setItem('shoppingChart', JSON.stringify(shoppingChart))
+
+        })
+        
+    //precio total
+    const totalPrice = document.getElementById('totalPrice')
+    totalPrice.innerText = shoppingChart.reduce((acumulador, item) => acumulador + item.price, 0)
 }
 
 /*funcion para eliminar items del carrito*/
